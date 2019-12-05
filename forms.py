@@ -13,7 +13,3 @@ class LoginUsuarioForm(FlaskForm):
     usuario = StringField('Usuário', validators = [DataRequired()])
     senha = PasswordField('Senha', validators = [DataRequired()])
     submit = SubmitField('Entrar')
-
-class AdocoesForm(FlaskForm):
-    motivo = TextAreaField('Por que você deseja dotar um cão?', validators = [DataRequired()])
-    submit = SubmitField('Adotar')
