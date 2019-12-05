@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<!--CARROSSEL-->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{{ url_for('static', filename='img/IMG01.jpg') }}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='img/IMG02.jpg') }}" class="d-block w-100" alt="...">
+        </div>
+    </div>
+</div>
+<!--MENSAGEM-->
+<div style="width: 80%; margin:auto; margin-top: 2%; border-radius: 5px; border: 1px solid grey;">
+    Oii,tudo bem ?</br>
+    Se voce está nessa pagina é por que provavelmente gosta de cães ou porque sabe que  eles são um dos seres inocentes e doceis que eles podem ser quando bem cuidados.<p> Se voce entende isso e assim como nós quer ajuda-los a sobreviver bem nesse mundo tão cruel, adote um amigo, ou nos faça uma doação para que tenhamos o seu apoio em ajuda-los.
+    Agora se você entrou aqui por engano, e não gosta nem um pouco dessas criaturas, tudo bem! Mas pense bem em quais motivos voce tem para não amar essas criaturinhas mais senciveis e amaceis desse mundo? Eu te garanto que eles são muito mais fiéis e amaveis que qualquer ser humano. Mesmo que voce não goste deles em sua casas, poderia nos ajudar com doação.
+</div>
+<!--CARDS-->
+<div class="card-deck" style="width:100%; margin:auto; margin-top: 2%; margin-bottom: 2%;">
+    <div class="card"><br>
+        <img src="{{ url_for('static', filename='img/DOG1.png') }}" style="width:50%; margin: auto;" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text" align="justify">
+                Adotar um animal é um envolto de imprevisibilidade, nunca se sabe o que esperar, e essa é a melhor parte 
+                para quem gosta de novas experiências. O melhor disso tudo é que a maioria das surpresas são positivas. Os 
+                cães se mostram muito amáveis, mesmo que no início possam demonstrar alguns problemas decorrentes das 
+                dificuldades que já passaram, quando você conquista a confiança desses animais, ganha uma companhia fiel.
+            </p>
+        </div>
+    </div>
+    <div class="card"><br>
+        <img src="{{ url_for('static', filename='img/DOG2.png') }}" style="width:50%; margin: auto;" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text" align="justify">
+                Adotar um animal é valorizar a vida. Um cão ou gato é capaz de sentir emoções – como dor e alegria/excitação 
+                – e por isso, sofre tanto quanto nós, humanos. É recuperar uma vida literalmente jogada fora. Ao adotar um 
+                animal carente, você ensina ao seu filho, às crianças com quem você convive, verdadeiros valores de responsabilidade, 
+                comprometimento e, sobretudo, humanidade.
+            </p>
+        </div>
+    </div>
+    <div class="card"><br>
+        <img src="{{ url_for('static', filename='img/DOG3.png') }}" style="width:50%; margin: auto;" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text" align="justify">
+                Um bichinho pode mudar muito a forma como vemos as coisas. Um gatinho ou cãozinho tem o poder de encher 
+                nossa vida de amor e alegria e, por isso, você merece um peludinho correndo e latindo/miando pela casa, 
+                definitivamente! 
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
