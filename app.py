@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, request
 from flask_sqlalchemy import SQLAlchemy
-from forms import CadastroUsuarioForm, LoginUsuarioForm, AdocoesForm
+from forms import CadastroUsuarioForm, LoginUsuarioForm
 from flask_login import LoginManager, login_user, logout_user
 
 app = Flask (__name__)
